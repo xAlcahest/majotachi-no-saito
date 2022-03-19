@@ -6,14 +6,17 @@
   <meta name="theme-color" content="#f06292">
   <title>Majotachi no Sub</title>
   <meta name="author" content="EricchiYukia">
-  <meta name="description" content="Sito web dedicato alla traduzione e alle risorse su Strawberry Panic">
-  <meta name="keywords" content="Strawberry Panic,SubITA,sub,ita,anime,yuri">
+  <meta name="description" content="Sito web dei fansub di Majotachi no Sub!">
+  <meta name="keywords" content="Majotachi no Sub,Majotachi,Fansub,SubITA,sub,ita,anime,vn,visual novel,manga">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/stylish.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 <body>
+
+
+
   <div id="index-banner" class="parallax-container">
     <div class="custom-section-logo">
       <div class="container">
@@ -23,7 +26,7 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="images/ougon.png" alt="Sfondo della chiesa di Astraea"></div>
+    <div class="parallax"><img src="images/ougon.png" alt="Sfondo della Terra Dorata"></div>
   </div>
 
   <div class="navbar">
@@ -88,23 +91,29 @@
       </div>
     </div>
   </div>
-  <audio id="ahaha">
-    <source src="audio/ahaha.ogg" type="audio/ogg">
-    <source src="audio/ahaha.mp3" type="audio/mpeg">
-  </audio>
-  <img class="beato" id="beatoriche" onclick="beatoriche()" src="images/Bea_a11_1_def3.png" />
 
 
   <footer class="page-footer grey darken-4">
     <div class="container">
       <div class="row">
-        <div class="col l12 s12 m12">
+        <div class="col l12 s12 m12 beatospace">
           <h5 class="white-text center">2019 &middot; EricchiYukia</h5>
           <p class="grey-text text-lighten-4">This website is a fan project, therefore it's not official in any way and it's not related with any official resource.</p>
           <p>Background by <a href="http://pattern8.com/free-repeat-patterns/ornate-swirl-black">Pattern8</a></p>
         </div>
+        
     </div>
   </footer>
+
+  <audio id="ahaha">
+    <source src="audio/ahaha.ogg" type="audio/ogg">
+    <source src="audio/ahaha.mp3" type="audio/mpeg">
+  </audio>
+  <div id="wrapper">
+    <div id="bottompic">
+      <img class="beato" id="beatoriche" onclick="beatoriche()" src="images/Bea_a11_1_def3.png" />
+    </div>
+  </div>
 
 
   <!--  Scripts-->
@@ -117,6 +126,6 @@
       laugh.play();
       document.getElementById("beatoriche").src = "images/Bea_a11_akuwarai5.png";
     }
-</script>
+  </script>
   </body>
 </html>

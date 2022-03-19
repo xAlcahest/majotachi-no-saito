@@ -77,6 +77,24 @@ li .waves-effect {
   display: block;
 }
 
+#wrapper {
+  position: relative;
+}
+
+#bottompic {
+  position: absolute;
+  bottom: 0;
+  right: 0.5em;
+  padding-bottom: 0;
+  line-height: 0;
+}
+
+img#beatoriche.beato {
+  max-height: 25em;
+  max-width: 25em;
+  bottom: 0;
+}
+
 @media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
@@ -117,6 +135,13 @@ li .waves-effect {
     overflow: hidden;
     white-space: nowrap;
   }
+  img#beatoriche.beato {
+    display: none;
+  }
+
+  .beatospace {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 601px) {
@@ -138,8 +163,8 @@ li .waves-effect {
     padding-right: 1.5em;
   }
 
-  img#beatoriche.beato {
-    max-height: 50%;
+  div.beatospace {
+    width: 70% !important;
   }
 
   @media only screen and (max-width : 992px) {
@@ -149,5 +174,22 @@ li .waves-effect {
     }
     #index-banner .section {
       top: 10%;
+    }
+    #wrapper {
+      position: relative;
+    }
+  
+    #bottompic {
+      position: absolute;
+      bottom: 0;
+      right: 1em;
+      padding-bottom: 0;
+      line-height: 0;
+    }
+  
+    img#beatoriche.beato {
+      max-height: 20em;
+      max-width: 20em;
+      bottom: 0;
     }
   }
