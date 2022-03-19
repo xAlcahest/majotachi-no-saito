@@ -15,7 +15,30 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-image: url('../images/bg.png');
+  background: radial-gradient(4rem,
+    rgba(255,255,255,0) 80%, 
+    #494949 80%, #4f4f4f 99%, 
+    rgba(255,255,255, 0) 
+    ) 0 0,
+    radial-gradient(4rem,
+    rgba(255,255,255,0) 80%, 
+    #414141 80%, #525252 99%,  
+    rgba(255,255,255, 0) 
+    ) 4em 4em,
+    radial-gradient(4.7rem,
+    rgba(255,255,255,0) 50%, 
+    #3a3a3a 50%,
+    #292929 75%, #2c2c2c 99%, 
+    rgba(255,255,255, 0) 
+    ) 4em 4em,
+    radial-gradient(4.7rem,
+    rgba(255,255,255,0) 50%, 
+    #4f4f4f 50%,
+    #373737 75%, #222222 99%, 
+    rgba(255,255,255, 0) 
+    ) 0 0;
+  background-size: 8rem 8rem;
+  background-color: #3c3c3c;
 }
 
 h1 {
