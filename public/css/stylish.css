@@ -1,0 +1,153 @@
+﻿@charset "utf-8";
+
+/* © EricchiYukia 2019 */
+
+html, body {
+    font-family: 'Georgia', cursive;
+  }
+
+a {
+	text-decoration: none;
+	color: #db549e;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url('../images/bg.png');
+}
+
+h1 {
+	font-family: 'Georgia', cursive;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+h2{
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	font-family: 'Georgia', cursive;
+	margin-bottom: 0.5em;
+}
+
+h3{
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	font-family: 'Georgia', cursive;
+	margin-bottom: 0.5em;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.sidenav li a {
+  color: #ffffff;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.section {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav {
+  position: relative;
+}
+
+.btn, .btn-small, .btn-large, .navbar {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;;
+}
+
+li .waves-effect {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+    font-size: inherit;
+  }
+
+  footer.page-footer {
+    margin: 0;
+  }
+
+	.desc {
+		display:none;
+	}
+  .logo{
+    max-height: 200px;
+  }
+  .parallax-container {
+      min-height: 240px;
+  }
+  .custom-section-logo{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .brand-logo {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+
+  .custom-section-logo{
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
+	img.logo {
+	   max-width: 35em;
+     margin: 0 auto;
+	}
+  .brand-logo{
+    padding-left: 18px !important;
+  }
+
+  .row .col{
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  img#beatoriche.beato {
+    max-height: 50%;
+  }
+
+  @media only screen and (max-width : 992px) {
+    .parallax-container .section {
+      position: absolute;
+      top: 40%;
+    }
+    #index-banner .section {
+      top: 10%;
+    }
+  }

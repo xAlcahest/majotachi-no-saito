@@ -1,23 +1,122 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="generator" content="GitLab Pages">
-    <title>Plain HTML site using GitLab Pages</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="https://pages.gitlab.io/plain-html/">Plain HTML Example</a>
-      <a href="https://gitlab.com/pages/plain-html/">Repository</a>
-      <a href="https://gitlab.com/pages/">Other Examples</a>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#f06292">
+  <title>Majotachi no Sub</title>
+  <meta name="author" content="EricchiYukia">
+  <meta name="description" content="Sito web dedicato alla traduzione e alle risorse su Strawberry Panic">
+  <meta name="keywords" content="Strawberry Panic,SubITA,sub,ita,anime,yuri">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/stylish.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+  <div id="index-banner" class="parallax-container">
+    <div class="custom-section-logo">
+      <div class="container">
+        <div class="row center">
+          <img class="responsive-img logo" src="images/logo.png">
+        </div>
+        <br><br>
+      </div>
     </div>
+    <div class="parallax"><img src="images/ougon.png" alt="Sfondo della chiesa di Astraea"></div>
+  </div>
 
-    <h1>Hello World!</h1>
+  <div class="navbar">
+    <nav>
+      <div class="nav-wrapper yellow darken-3">
+        <a class="brand-logo white-text">Home page</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="TODO1.html">Episodi in streaming</a></li>
+          <li><a href="TODO2.html">Oggetto 2</a></li>
+          <li><a href="TODO3.html">Oggetto 3</a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <p>
-      This is a simple plain-HTML website on GitLab Pages, without any fancy static site generator.
-    </p>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a class="waves-effect waves-dark" href="TODO1.html">Episodi in streaming</a></li>
+      <li><a class="waves-effect waves-dark" href="TODO2.html">Oggetto 2</a></li>
+      <li><a class="waves-effect waves-dark" href="TODO3.html">Oggetto 3</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m12">
+          <div class="row s12 m12">
+            <div class="col s12 m12">
+            <h5 class="center">Introduzione</h5>
+              <p class="light">Bla bla bla intro</p>
+            </div>
+          </div>
+          <div class="row s12 m12 l12">
+            <h5 class="center">Majotachi no Sub</h5>
+            <div class="col s12 m8 l8">
+              <p class="light">Bla bla bla 2.</p>
+              <p>Bla bla bla 3</p>
+            </div>
+            <div class="col s3 m0 l0 center"></div>
+            <div class="col s6 m4 l4 center">
+              <img class="materialboxed" width="100%" src="images/nagisa.png">Nagisa Aoi
+            </div>
+          </div>
+            <div class="row s12 m12 l12">
+              <div class="col s12 m12 l12">
+                <p>Bla bla bla 4.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="row s12 m12 l12">
+            <h5 class="center">I membri (sussy)</h5>
+            <div class="col s12 m4 l4">
+              Placeholder
+            </div>
+            <div class="col s12 m8 l8">
+              <p class="light">Sussy baka</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="ahaha">
+    <source src="audio/ahaha.ogg" type="audio/ogg">
+    <source src="audio/ahaha.mp3" type="audio/mpeg">
+  </audio>
+  <img class="beato" id="beatoriche" onclick="beatoriche()" src="images/Bea_a11_1_def3.png" />
+
+
+  <footer class="page-footer grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12 m12">
+          <h5 class="white-text center">2019 &middot; EricchiYukia</h5>
+          <p class="grey-text text-lighten-4">This website is a fan project, therefore it's not official in any way and it's not related with any official resource.</p>
+          <p>Background by <a href="http://pattern8.com/free-repeat-patterns/ornate-swirl-black">Pattern8</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+  <script language="javascript">
+    function beatoriche() {
+      var laugh = document.getElementById("ahaha");
+      laugh.play();
+      document.getElementById("beatoriche").src = "images/Bea_a11_akuwarai5.png";
+    }
+</script>
   </body>
 </html>
-
