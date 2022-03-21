@@ -149,6 +149,11 @@ p {
   line-height: 2rem;
 }
 
+img.avatar {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
 .sidenav {
   background-color: #444444;
   color: #ffffff;
@@ -196,6 +201,7 @@ img#beatoriche.beato {
   bottom: 0;
 }
 
+/* Mobile */
 @media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
@@ -206,6 +212,10 @@ img#beatoriche.beato {
   }
   .icon-block .material-icons {
     font-size: inherit;
+  }
+
+  img.avatar {
+    max-width: 35%;
   }
 
   footer.page-footer {
@@ -249,6 +259,7 @@ img#beatoriche.beato {
   }
 }
 
+/* Tablet min */
 @media only screen and (min-width: 601px) {
 
   .custom-section-logo{
@@ -276,6 +287,8 @@ img#beatoriche.beato {
     font-size: 16px;
   }
 
+
+  /* Tablet max */
   @media only screen and (max-width : 992px) {
     .parallax-container .section {
       position: absolute;
@@ -284,6 +297,7 @@ img#beatoriche.beato {
     #index-banner .section {
       top: 10%;
     }
+
     #wrapper {
       position: relative;
     }

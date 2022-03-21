@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="theme-color" content="#f06292">
+  <meta name="theme-color" content="#7b1fa2">
   <title>Majotachi no Sub</title>
   <meta name="author" content="EricchiYukia">
   <meta name="description" content="Sito web dei fansub di Majotachi no Sub!">
@@ -14,9 +14,13 @@
   <link href="css/stylish.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 <body>
-
-
-
+  <script src="./js/jquery-3.6.0.min.js"></script>
+<script>
+    $(function(){ 
+    $("#culettoheader").load("header.html");  
+    $("#footer").load("header.html");  
+  }); 
+</script>
   <div id="index-banner" class="parallax-container">
     <div class="custom-section-logo">
       <div class="container">
@@ -28,19 +32,9 @@
     </div>
     <div class="parallax"><img src="images/ougon.png" alt="Sfondo della Terra Dorata"></div>
   </div>
-
-  <div class="navbar">
-    <nav>
-      <div class="nav-wrapper purple darken-2">
-        <a class="brand-logo white-text">Home page</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="TODO1.html">Episodi in streaming</a></li>
-          <li><a href="TODO2.html">Oggetto 2</a></li>
-          <li><a href="TODO3.html">Oggetto 3</a></li>
-        </ul>
-      </div>
-    </nav>
+  <!-- Top part -->
+  <div id="culettoheader"></div>
+    <!--End top part-->
 
     <ul class="sidenav" id="mobile-demo">
       <li><a class="waves-effect waves-dark" href="TODO1.html">Episodi in streaming</a></li>
@@ -110,16 +104,23 @@
           <h5 class="center">Le streghe</h5>
           <div class="row s12 m12 l12">
             <div class="col s12 m4 l4">
-              <h6>Glorious Lance</h6>
-              <p class="light">Una Strega-Lancia che centra sempre il suo bersaglio. Ho incisioni antiche scritte nella lingua dei Kami, me ne vanto e so essere molto tronfia ed arrogante, ma conosciutami meglio mi so dimostrare una valida alleata.</p>
+              <div class="center-on-small-only">
+                <img class="avatar" src="images/gloriouslance.png" />
+                <h6>Glorious Lance</h6>
+              </div>
+              <p class="light">Sono una Strega-Lancia che centra sempre il suo bersaglio. Ho incisioni antiche scritte nella lingua dei Kami, me ne vanto e so essere molto tronfia ed arrogante, ma conosciutami meglio mi so dimostrare una valida alleata.</p>
             </div>
             <div class="col s12 m4 l4">
-              <h6>Sofia Scarlet</h6>
+              <div class="center-on-small-only">
+                <h6>Sofia Scarlet</h6>
+              </div>
               <p class="light">Sono la Strega Mangia-lingue. Con l'aiuto dei miei famigli felini, mi nutro di conoscenza. Badate bene che i miei famigli hanno un'inclinazione verso le lingue che pronunciano parole asiatiche. Se doveste sentire miagolii molesti nel cuore della notte, cominciate a scappare, perché subito dopo seguirà la vista di mille occhi di gatti famelici nel buio pronti a divorare le loro prede.</p>
             </div>
-            
             <div class="col s12 m4 l4">
-              <h6>Ericchi</h6>
+              <div class="center-on-small-only">
+                <img class="avatar" src="images/ericchi.png" />
+                <h6>Ericchi</h6>
+              </div>
               <p class="light">Buonasera, io sono la Strega Virtuale. Come dice il mio titolo, apprezzo molto le arti digitali e mi diverto a vagare per la rete alla ricerca di nuovi mondi da scoprire. Se notate il vostro computer bloccarsi in modo strano o il touchscreen del vostro smartphone glitchare, potrei essere stata io durante un momento di noia.</p>
             </div>
             <div class="col s12 m4 l4">
