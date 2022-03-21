@@ -126,24 +126,23 @@ h4 {
   font-weight: normal;
 }
 
-  /* Container testo in-pic */
+/* Container testo in-pic */
+div.container-image {
+  position: relative;
+  text-align: center;
+}
 
-  div.container-image {
-    position: relative;
-    text-align: center;
-  }
+div.bottom-image {
+  position:absolute;
+  bottom: 0px;
 
-  div.bottom-image {
-    position:absolute;
-    bottom: -10px;
-
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 16px;
-    vertical-align: bottom;
-    text-shadow: 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000;
-  }
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  vertical-align: bottom;
+  text-shadow: 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000, 0px 0px 6px #000000;
+}
 
 p {
   line-height: 2rem;
@@ -246,7 +245,8 @@ img#beatoriche.beato {
     overflow: hidden;
     white-space: nowrap;
   }
-  img#beatoriche.beato {
+
+  .nomobile {
     display: none;
   }
 
@@ -256,6 +256,14 @@ img#beatoriche.beato {
 
   p {
     font-size: 15px;
+  }
+
+  .navbar {
+    position: relative;
+    height: 56px;
+    z-index: 997;
+    position: fixed;
+    width: 100%;
   }
 }
 

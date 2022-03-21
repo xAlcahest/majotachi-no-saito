@@ -10,18 +10,11 @@
   <meta name="keywords" content="Majotachi no Sub,Majotachi,Fansub,SubITA,sub,ita,anime,vn,visual novel,manga">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/stylish.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 <body>
-  <script src="./js/jquery-3.6.0.min.js"></script>
-<script>
-    $(function(){ 
-    $("#culettoheader").load("header.html");  
-    $("#footer").load("header.html");  
-  }); 
-</script>
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="parallax-container nomobile">
     <div class="custom-section-logo">
       <div class="container">
         <div class="row center">
@@ -30,12 +23,30 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="images/ougon.png" alt="Sfondo della Terra Dorata"></div>
+    <div class="parallax"><img src="images/ougon.jpg" alt="Sfondo della Terra Dorata"></div>
   </div>
-  <!-- Top part -->
-  <div id="culettoheader"></div>
-    <!--End top part-->
-
+  <!-- Top part
+  <div id="barra"></div>
+    End top part-->
+    <div class="navbar">
+      <nav>
+        <div class="nav-wrapper purple darken-2">
+          <a class="brand-logo white-text">Home page</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li class="active"><a href="TODO1.html">Home</a></li>
+            <li><a href="TODO2.html">Anime</a></li>
+            <li><a href="TODO3.html">VN</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <ul class="sidenav" id="mobile-demo">
+        <li><a class="waves-effect waves-dark" href="TODO1.html">Home page</a></li>
+        <li><a class="waves-effect waves-dark" href="TODO2.html">Anime</a></li>
+        <li><a class="waves-effect waves-dark" href="TODO3.html">Visual Novel</a></li>
+      </ul>
+    </div>
 
 
   <div class="container">
@@ -57,12 +68,17 @@
               </p>
             </div>
           </div>
-
           <div class="container">
             <div class="row">
               <div class="col l6 s6 m6">
                 <h5 class="center">Visual Novel</h5>
-                <p class="light">oidsngirngior enhtenoietnhoirehi genirgiregjiorejgoe geoierjgoreno.</p>
+                <p class="light">
+
+                  <a class="waves-effect waves-light btn purple" href="javascript:void(0)">Clicca qui per fare la cacca</a>
+                  
+                  <video class="responsive-video" src="videos/Strawberry Panic 04 - Il principe dal cavallo bianco 「白馬の君」 [Softsub ITA 720p - EricchiYukia].mkv" type='video/x-matroska; codecs="theora, vorbis"' controls>
+                  </video>
+                </p>
               </div>
               <div class="col l6 s6 m6">
                 <h5 class="center">Anime</h5>
@@ -96,28 +112,31 @@
             </div>
 
           </div>
-          <h5 class="center">Le streghe</h5>
+          <h4 class="center">Le streghe</h4>
           <div class="row s12 m12 l12">
             <div class="col s12 m4 l4">
               <div class="center-on-small-only">
-                <img class="avatar" src="images/gloriouslance.png" />
+                <img class="avatar" src="images/avatars/gloriouslance.png" />
                 <h6>Glorious Lance</h6>
               </div>
               <p class="light">Sono una Strega-Lancia che centra sempre il suo bersaglio. Ho incisioni antiche scritte nella lingua dei Kami, me ne vanto e so essere molto tronfia ed arrogante, ma conosciutami meglio mi so dimostrare una valida alleata.</p>
             </div>
             <div class="col s12 m4 l4">
               <div class="center-on-small-only">
+                <img class="avatar" src="images/avatars/sofiascarlet.jpg" />
                 <h6>Sofia Scarlet</h6>
               </div>
               <p class="light">Sono la Strega Mangia-lingue. Con l'aiuto dei miei famigli felini, mi nutro di conoscenza. Badate bene che i miei famigli hanno un'inclinazione verso le lingue che pronunciano parole asiatiche. Se doveste sentire miagolii molesti nel cuore della notte, cominciate a scappare, perché subito dopo seguirà la vista di mille occhi di gatti famelici nel buio pronti a divorare le loro prede.</p>
             </div>
             <div class="col s12 m4 l4">
               <div class="center-on-small-only">
-                <img class="avatar" src="images/ericchi.png" />
-                <h6>Ericchi</h6>
+                <img class="avatar" src="images/avatars/ericchi.png" />
+                <h6>EricchiYukia</h6>
               </div>
               <p class="light">Buonasera, io sono la Strega Virtuale. Come dice il mio titolo, apprezzo molto le arti digitali e mi diverto a vagare per la rete alla ricerca di nuovi mondi da scoprire. Se notate il vostro computer bloccarsi in modo strano o il touchscreen del vostro smartphone glitchare, potrei essere stata io durante un momento di noia.</p>
             </div>
+          </div>
+          <div class="row s12 m12 l12">
             <div class="col s12 m4 l4">
               <h6>Ericchi</h6>
               <p class="light">Buonasera, io sono la Strega Virtuale. Come dice il mio titolo, apprezzo molto le arti digitali e mi diverto a vagare per la rete alla ricerca di nuovi mondi da scoprire. Se notate il vostro computer bloccarsi in modo strano o il touchscreen del vostro smartphone glitchare, potrei essere stata io durante un momento di noia.</p>
@@ -134,7 +153,6 @@
       </div>
     </div>
   </div>
-
 
   <footer class="page-footer grey darken-4">
     <div class="container">
@@ -153,12 +171,19 @@
   </audio>
   <div id="wrapper">
     <div id="bottompic">
-      <img class="beato" id="beatoriche" onclick="beatoriche()" src="images/Bea_a11_1_def3.png" />
+      <img class="beato nomobile" id="beatoriche" onclick="beatoriche()" src="images/Bea_a11_1_def3.png" />
     </div>
   </div>
 
 
   <!--  Scripts-->
+<script>
+    $(function(){ 
+    $("#barra").load("header.html");  
+    $("#footer").load("header.html");  
+  }); 
+</script>
+
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
