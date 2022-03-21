@@ -2,9 +2,52 @@
 
 /* © EricchiYukia 2019 */
 
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Regular.woff") format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Light.woff") format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-LightItalic.woff") format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Bold.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Italic.woff") format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-BoldItalic.woff") format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
 html, body {
-    font-family: 'Sans-serif', cursive;
+    font-family: 'NotoSans';
   }
+
+p {
+  font-family: 'NotoSans';
+}
 
 a {
 	text-decoration: none;
@@ -54,21 +97,21 @@ body {
 }
 
 h1 {
-	font-family: 'Georgia', cursive;
+	font-family: 'NotoSans', cursive;
 	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 h2{
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
-	font-family: 'Georgia', cursive;
+	font-family: 'NotoSans', cursive;
 	margin-bottom: 0.5em;
 }
 
 h3{
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
-	font-family: 'Georgia', cursive;
+	font-family: 'NotoSans', cursive;
 	margin-bottom: 0.5em;
 }
 
@@ -77,6 +120,10 @@ h3{
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
+}
+
+h4 {
+  font-weight: normal;
 }
 
   /* Container testo in-pic */
@@ -88,8 +135,8 @@ h3{
 
   div.bottom-image {
     position:absolute;
-    /*bottom: -3px;*/
-    top: 87%;
+    bottom: -10px;
+
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -172,7 +219,7 @@ img#beatoriche.beato {
     max-height: 200px;
   }
   .parallax-container {
-      min-height: 240px;
+    min-height: 240px;
   }
   .custom-section-logo{
     padding-top: 30px;
@@ -240,6 +287,10 @@ img#beatoriche.beato {
     #wrapper {
       position: relative;
     }
+
+    .container {
+      width: 92%;
+    }
   
     #bottompic {
       position: absolute;
@@ -255,3 +306,4 @@ img#beatoriche.beato {
       bottom: 0;
     }
   }
+}
