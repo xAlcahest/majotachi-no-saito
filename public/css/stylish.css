@@ -51,7 +51,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: #ab47bc;
+	color: #ba68c8;
 }
 
 body {
@@ -338,8 +338,8 @@ p.mobileonly {
     }
   
     img#beatoriche.beato {
-      max-height: 25em;
-      max-width: 25em;
+      max-height: 22em;
+      max-width: 22em;
       bottom: 0;
     }
   }
