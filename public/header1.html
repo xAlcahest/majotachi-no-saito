@@ -1,0 +1,42 @@
+<!-- Da mettere nella pagina base
+
+<script>
+    $(function(){ 
+    $("#barra").load("header.html");  
+    $("#footer").load("header.html");  
+  }); 
+</script>
+
+-->
+
+<div id="index-banner" class="parallax-container hide-on-mobile-only">
+  <div class="custom-section-logo">
+    <div class="container">
+      <div class="row center">
+        <img class="responsive-img logo" src="images/logo.png">
+      </div>
+      <br /><br />
+    </div>
+  </div>
+  <div class="parallax"><img src="images/ougon.jpg" alt="Sfondo della Terra Dorata"></div>
+</div>
+
+<div class="navbar">
+  <nav>
+    <div class="nav-wrapper purple darken-2">
+      <a class="brand-logo white-text">Home page</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger white-text"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" onclick="load('footer.html');">Anime</a></li>
+        <li><a href="TODO3.html">Visual Novel</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a class="waves-effect waves-dark" href="index.html">Home page</a></li>
+    <li><a class="waves-effect waves-dark" href="TODO2.html">Anime</a></li>
+    <li><a class="waves-effect waves-dark" href="TODO3.html">Visual Novel</a></li>
+  </ul>
+</div>
