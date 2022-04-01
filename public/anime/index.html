@@ -7,7 +7,7 @@
   <meta name="author" content="EricchiYukia">
   <meta name="description" content="Sito web dei fansub di Majotachi no Sub!">
   <meta name="keywords" content="Majotachi no Sub,Majotachi,Fansub,SubITA,sub,ita,anime,vn,visual novel,manga">
-  <base href="http://0.0.0.0:8000/">
+  <base href="../">
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -50,6 +50,94 @@
     
     
                   <!-- Inserire il contenuto qui -->
+                      <div id="episoditable"></div>
+
+
+                  <script>
+                    function compilaepisodi() {
+                      // Qui metti 1 se ci sono anche gli episodi softsub:
+                      var softavailable = 1
+                      // Qui metti 1 se gli episodi softsub sono solo su Telegram:
+                      var telegramsoft = 1
+                      // Qui metti 1 se gli episodi hanno un titolo:
+                      const titoliavailable = 1
+
+                      // Qui vanno i link degli episodi hardsub:
+                      const episodi = [
+                        "https://link1",
+                        "https://link2",
+                        "https://link2"
+                      ];
+
+                      // Qui va il link di Telegram se i softsub sono lì:
+                      const telegramlink = "https://t.me/telegramlink"
+
+                      // Qui vanno i link degli episodi softsub se disponibili:
+                      const episoft = [
+                        "https://link1",
+                        "https://link2",
+                        "https://link2"
+                      ];
+
+                      const titoli = [
+                          "La collina dei fiori di ciliego",
+                          "Étoile",
+                          "Soffitta"
+                      ]
+
+                      // Da qui inizia il codice vero e proprio. NON TOCCARE NIENTE!
+                      var buffer = '<table class="highlight"><thead><tr><th scope="col">Episodio</th>';
+                      if (titoliavailable == 1) {
+                        buffer += '<th scope="col">Titolo</th>';
+                      }
+                      buffer += '<th scope="col">Guarda</th></tr></thead><tbody>';
+
+                      for (let i = 0; i < episodi.length+0; i++) {
+                        buffer += '<tr><td scope="row">' + (i+1) + '</td>';
+                          if (titoliavailable == 1) {
+                            buffer += '<td scope="row">' + titoli[i] + '</td>';
+                          }
+                        buffer += '<td scope="row">' + '<a class="waves-effect waves-light btn modal-trigger" href="#modal'+ i +'">Modal</a><div id="modal' + i + '" class="modal"><div class="modal-content no-pad"><video class="responsive-video" src="'+ episodi[i]+ '" controls></video></div><div class="modal-footer"><a href="' + episodi[i] + '" class="waves-effect waves-purple btn-flat">Download</a><a href="#!" class="modal-close waves-effect waves-purple btn-flat">Chiudi</a></div></div>' + '</td></tr>';
+                      }
+                      buffer += '</tbody></table>';
+                        var compilatable = document.getElementById("episoditable");
+                        compilatable.innerHTML = buffer;
+                      /*
+                      if (titoliavailable == 1) {
+                        $("thead").append('<tr><th scope="col">Episodio</th><th scope="col">Titolo</th><th scope="col">Guarda</th></tr>');
+                      } else {
+                        $("thead").append('<tr><th scope="col">Episodio</th><th scope="col">Guarda</th></tr>');
+                      }
+
+                      for (let i = 0; i < episodi.length+0; i++) {
+                        if (titoliavailable == 1) {
+                          $("tbody").append('<tr><td scope="row">' + (i+1) + '</td>' + '<td scope="row">' + titoli[i] + '</td>' + '<td scope="row">' + '<a class="waves-effect waves-light btn modal-trigger" href="#modal'+ i +'">Modal</a><div id="modal' + i + '" class="modal"><div class="modal-content no-pad"><video class="responsive-video" src="'+ episodi[i]+ '" controls></video></div><div class="modal-footer"><a href="' + episodi[i] + '" class="waves-effect waves-purple btn-flat">Download</a><a href="#!" class="modal-close waves-effect waves-purple btn-flat">Chiudi</a></div></div>' + '</td></tr>');
+                        } else {
+                          $("tbody").append('<tr><td scope="row">' + (i+1) + '</td>' + '<td scope="row">' + 'Placeholder' + '</td></tr>');
+                        }
+                      }
+                      */
+                    }
+                    window.onload = compilaepisodi;
+                  </script>
+
+
+
+                                    <!-- Modal Trigger -->
+<a class="waves-effect waves-light btn modal-trigger" href="#modal5">Modal</a>
+
+<!-- Modal Structure -->
+<div id="modal5" class="modal">
+  <div class="modal-content no-pad">
+    <video class="responsive-video" src="videos/Strawberry Panic 04 - Il principe dal cavallo bianco 「白馬の君」 [Softsub ITA 720p - EricchiYukia].mkv" type='video/x-matroska; codecs="theora, vorbis"' controls>
+    </video>
+  </div>
+  <div class="modal-footer">
+    <a href="videos/Strawberry Panic 04 - Il principe dal cavallo bianco 「白馬の君」 [Softsub ITA 720p - EricchiYukia].mkv" class="waves-effect waves-purple btn-flat">Download</a>
+    <a href="#!" class="modal-close waves-effect waves-purple btn-flat">Chiudi</a>
+  </div>
+</div>
+<!-- Rimuovi sto modale quando hai fatto -->
                   <br />
                   <br />
                   <br />

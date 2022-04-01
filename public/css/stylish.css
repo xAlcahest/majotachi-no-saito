@@ -273,6 +273,7 @@ p.mobileonly {
     z-index: 997;
     position: fixed;
     width: 100%;
+    top: 0;
   }
 
 }
