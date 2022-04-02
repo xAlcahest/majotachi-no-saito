@@ -43,116 +43,143 @@
       <div class="section">
         <!--   Icon Section   -->
         <p class="mobileonly"><br /></p>
-          <div class="row">
+          <div class="row s12 m12">
             <div class="col s12 m12">
               <div class="row s12 m12">
-                <div class="col s12 m12">
-    
-    
-                  <!-- Inserire il contenuto qui -->
-                      <div id="episoditable"></div>
+                <h4 class="center">Strawberry Panic</h4>
+                <div class="col s12 m6 l4">
+                  <div class="container-image center">
+                    <img src="images/posters/strawberry-panic.jpg" class="materialboxed poster">
+                  </div>
+                </div>
+                <div class="col s12 m6 l8">
+                    <h5>Info</h5>
+                    <b>Titolo giapponese: </b>ストロベリー・パニック<br />
+                    <b>Data d'uscita: </b>Primavera 2006<br />
+                    <b>Episodi: </b>26<br />
+                    <b>Genere: </b>Scolastico, Yuri, Sentimentale
 
-
-                  <script language="javascript">
-                    function compilaepisodi() {
-                      // Qui metti 1 se ci sono anche gli episodi softsub:
-                      var softavailable = 1;
-                      // Qui metti 1 se gli episodi softsub sono solo su Telegram:
-                      var telegramsoft = 1;
-                      // Qui metti 1 se gli episodi hanno un titolo:
-                      const titoliavailable = 1;
-
-                      // Qui vanno i link degli episodi hardsub:
-                      const episodi = [
-                        "http://streaming.majotachinosub.com/strawberry-panic/Strawberry Panic 01 - La collina dei fiori di ciliegio [Sub ITA 720p - EricchiYukia].mp4",
-                        "http://streaming.majotachinosub.com/strawberry-panic/Strawberry Panic 02 - Étoile [Sub ITA 720p - EricchiYukia].mp4",
-                        "http://streaming.majotachinosub.com/strawberry-panic/Strawberry Panic 03 - Soffitta [Sub ITA 720p - EricchiYukia].mp4"
-                      ];
-
-                      // Qui va il link di Telegram se i softsub sono lì:
-                      const telegramlink = "https://t.me/telegramlink"
-
-                      // Qui vanno i link degli episodi softsub se disponibili:
-                      const episoft = [
-                        "https://link1",
-                        "https://link2",
-                        "https://link2"
-                      ];
-
-                      const titoli = [
-                          "La collina dei fiori di ciliego",
-                          "Étoile",
-                          "Soffitta"
-                      ];
-
-                      // Da qui inizia il codice vero e proprio. NON TOCCARE NIENTE DA QUI IN POI!
-                      var buffer = '<table class="highlight"><thead><tr><th scope="col">Episodio</th>';
-                      if (titoliavailable == 1) {
-                        buffer += '<th scope="col">Titolo</th>';
-                      }
-                      buffer += '<th scope="col">Azioni</th></tr></thead><tbody>';
-
-                      for (let i = 0; i < episodi.length+0; i++) {
-                        buffer += '<tr><td scope="row">' + (i+1) + '</td>';
-                          if (titoliavailable == 1) {
-                            buffer += '<td scope="row">' + titoli[i] + '</td>';
-                          }
-                        buffer += '<td scope="row">' + '<a class="waves-effect waves-light btn modal-trigger purple" href="#ep'+ (i+1) +'"><i class="material-icons">play_arrow</i></a> <a class="waves-effect waves-light btn modal-trigger purple" href="'+ episodi[i] +'"><i class="material-icons">file_download</i></a><div id="ep' + (i+1) + '" class="modal"><div class="modal-content no-pad"><video class="responsive-video" src="'+ episodi[i]+ '" controls></video></div><div class="modal-footer"><a href="' + episodi[i] + '" class="waves-effect waves-purple btn-flat">Download (Hardsub)</a><a class="modal-action modal-close waves-effect waves-purple btn-flat">Chiudi</a></div></div></td></tr>';
-                        
-                      }
-                      buffer += '</tbody></table>';
-                        var compilatable = document.getElementById("episoditable");
-                        compilatable.innerHTML = buffer;
-                        
-                        $(document).ready(function(){
-                        $('.modal').modal({
-                          dismissible: false,
-                          complete: function() { alert('Closed triggered'); }
-                          });
-                        });
-                      /*
-                      if (titoliavailable == 1) {
-                        $("thead").append('<tr><th scope="col">Episodio</th><th scope="col">Titolo</th><th scope="col">Guarda</th></tr>');
-                      } else {
-                        $("thead").append('<tr><th scope="col">Episodio</th><th scope="col">Guarda</th></tr>');
-                      }
-
-                      for (let i = 0; i < episodi.length+0; i++) {
-                        if (titoliavailable == 1) {
-                          $("tbody").append('<tr><td scope="row">' + (i+1) + '</td>' + '<td scope="row">' + titoli[i] + '</td>' + '<td scope="row">' + '<a class="waves-effect waves-light btn modal-trigger" href="#modal'+ i +'">Modal</a><div id="modal' + i + '" class="modal"><div class="modal-content no-pad"><video class="responsive-video" src="'+ episodi[i]+ '" controls></video></div><div class="modal-footer"><a href="' + episodi[i] + '" class="waves-effect waves-purple btn-flat">Download</a><a href="#!" class="modal-close waves-effect waves-purple btn-flat">Chiudi</a></div></div>' + '</td></tr>');
-                        } else {
-                          $("tbody").append('<tr><td scope="row">' + (i+1) + '</td>' + '<td scope="row">' + 'Placeholder' + '</td></tr>');
-                        }
-                      }
-                      */
-                    }
-                    window.onload = compilaepisodi;
-                  </script>
-
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
-
+                    <h5>Chi ci ha lavorato?</h5>
+                    <b>Traduzione: </b>EricchiYukia<br />
+                    <b>Timing: </b>EricchiYukia<br />
+                    <b>Karaoke: </b>EricchiYukia<br />
+                    <b>Typesetting: </b>EricchiYukia, GM del Destino<br />
+                    <b>Check: </b>EricchiYukia, Benny, n91, Sofia Scarlet, Glorious Lance<br />
+                    <b>J-check: </b>EricchiYukia
+                  </p>
                 </div>
               </div>
+              <div class="row s12 m12 l12">
+                <div class="col s12 m12 l12">
+                  <h5>Descrizione</h5>
+                  <p class="light">A detta della Strega dello Svago Benny, questo anime è il <b>capostipite dello yuri</b> e la Strega Virtuale che lo ha tradotto e sta scrivendo queste parole non può che darle ragione, soprattutto dopo aver <b>perso il conto</b> del numero di volte che lo ha riguardato.</p>
+                  <p class="light">Ambientato ad Astraea, una sacra collina dove sorge un complesso scolastico di tre accademie molto diverse tra loro, Strawberry Panic racconta <b>la storia di Nagisa Aoi</b>, una studentessa trasferitasi lì a causa di un viaggio di lavoro dei suoi genitori.</p>
+                  <p class="light">Ben presto Nagisa si rende conto che la vita all'interno delle mura scolastiche ha dei risvolti... <i>particolari</i> e che la sua nuova vita da studentessa appena trasferita <b>nel rigidissimo istituto Miator</b> sarà piena di situazioni che la metteranno a dura prova, soprattutto a causa di una misteriosa studentessa più grande che sembra <i>proprio</i> averla presa di mira.</p>
+                </div>
+              </div>
+
+
+              <!-- Qui inizia la tabella episodi -->
+              <div id="episoditable"></div>
+
+
+              <script language="javascript">
+                function compilaepisodi() {
+                  // Qui metti 1 se ci sono anche gli episodi softsub:
+                  var softavailable = 1;
+                  // Qui metti 1 se gli episodi softsub sono solo su Telegram e 2 se sono disponibili sia qui che su Telegram:
+                  var telegramsoft = 1;
+                  // Qui metti 1 se gli episodi hanno un titolo:
+                  const titoliavailable = 1;
+
+                  // Qui vanno i link degli episodi hardsub:
+                  const episodi = [
+                    "http://streaming.majotachinosub.com/strawberry-panic/Strawberry Panic 01 - La collina dei fiori di ciliegio [Sub ITA 720p - EricchiYukia].mp4",
+                    "http://streaming.majotachinosub.com/strawberry-panic/Strawberry Panic 02 - Étoile [Sub ITA 720p - EricchiYukia].mp4",
+                    "http://streaming.majotachinosub.com/strawberry-panic/Strawberry Panic 03 - Soffitta [Sub ITA 720p - EricchiYukia].mp4"
+                  ];
+
+                  // Qui va il link di Telegram se i softsub sono lì:
+                  const telegramlink = "https://t.me/strawberrypanicfansubita"
+
+                  // Qui vanno i link degli episodi softsub se disponibili:
+                  const episoft = [
+                    "https://link1",
+                    "https://link2",
+                    "https://link3"
+                  ];
+
+                  const titoli = [
+                      "La collina dei fiori di ciliego",
+                      "Étoile",
+                      "Soffitta"
+                  ];
+
+                  // Da qui inizia il codice vero e proprio. NON TOCCARE NIENTE DA QUI IN POI!
+                  var buffer = '<table class="highlight"><thead><tr><th scope="col">Episodio</th>';
+                  if (titoliavailable == 1) {
+                    buffer += '<th scope="col">Titolo</th>';
+                  }
+                  buffer += '<th scope="col">Azioni</th></tr></thead><tbody>';
+
+                  for (let i = 0; i < episodi.length+0; i++) {
+                    buffer += '<tr><td scope="row">' + (i+1) + '</td>';
+                      if (titoliavailable == 1) {
+                        buffer += '<td scope="row">' + titoli[i] + '</td>';
+                      }
+                    buffer += '<td scope="row">' + '<a class="waves-effect waves-light btn modal-trigger purple" href="#ep'+ (i+1) +'"><i class="material-icons">play_arrow</i></a> <a class="waves-effect waves-light btn modal-trigger purple" href="'+ episodi[i] +'"><i class="material-icons">file_download</i></a><div id="ep' + (i+1) + '" class="modal"><div class="modal-content no-pad"><video class="responsive-video" src="'+ episodi[i]+ '" controls></video></div><div class="modal-footer"><a href="' + episodi[i] + '" class="waves-effect waves-purple btn-flat">Download (Hardsub)</a><a class="modal-action modal-close waves-effect waves-purple btn-flat">Chiudi</a></div></div></td></tr>';
+                    
+                  }
+                  buffer += '</tbody></table>';
+                    var compilatable = document.getElementById("episoditable");
+                    compilatable.innerHTML = buffer;
+                    
+                    $(document).ready(function(){
+                    $('.modal').modal({
+                      dismissible: false,
+                      complete: function() { alert('Closed triggered'); }
+                      });
+                    });
+                  /*
+                  if (titoliavailable == 1) {
+                    $("thead").append('<tr><th scope="col">Episodio</th><th scope="col">Titolo</th><th scope="col">Guarda</th></tr>');
+                  } else {
+                    $("thead").append('<tr><th scope="col">Episodio</th><th scope="col">Guarda</th></tr>');
+                  }
+
+                  for (let i = 0; i < episodi.length+0; i++) {
+                    if (titoliavailable == 1) {
+                      $("tbody").append('<tr><td scope="row">' + (i+1) + '</td>' + '<td scope="row">' + titoli[i] + '</td>' + '<td scope="row">' + '<a class="waves-effect waves-light btn modal-trigger" href="#modal'+ i +'">Modal</a><div id="modal' + i + '" class="modal"><div class="modal-content no-pad"><video class="responsive-video" src="'+ episodi[i]+ '" controls></video></div><div class="modal-footer"><a href="' + episodi[i] + '" class="waves-effect waves-purple btn-flat">Download</a><a href="#!" class="modal-close waves-effect waves-purple btn-flat">Chiudi</a></div></div>' + '</td></tr>');
+                    } else {
+                      $("tbody").append('<tr><td scope="row">' + (i+1) + '</td>' + '<td scope="row">' + 'Placeholder' + '</td></tr>');
+                    }
+                  }
+                  */
+                }
+                window.onload = compilaepisodi;
+              </script>
+
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+
+
             </div>
           </div>
-        </p>
       </div>
     </div>
 
