@@ -127,7 +127,7 @@
                       if (titoliavailable == 1) {
                         buffer += '<td scope="row">' + titoli[i] + '</td>';
                       }
-                    buffer += '<td scope="row">' + '<a class="waves-effect waves-light btn modal-trigger purple" href="#ep'+ (i+1) +'"><i class="material-icons">play_arrow</i></a> <a class="waves-effect waves-light btn modal-trigger purple" href="'+ episodi[i] +'"><i class="material-icons">file_download</i></a><div id="ep' + (i+1) + '" class="modal"><div class="modal-content no-pad"><video class="responsive-video" src="'+ episodi[i]+ '" controls></video></div><div class="modal-footer"><a href="' + episodi[i] + '" class="waves-effect waves-purple btn-flat">Download (Hardsub)</a><a class="modal-action modal-close waves-effect waves-purple btn-flat">Chiudi</a></div></div></td></tr>';
+                    buffer += '<td scope="row">' + '<a class="waves-effect waves-light btn modal-trigger purple" href="#ep'+ (i+1) +'"><i class="material-icons">play_arrow</i></a> <a class="waves-effect waves-light btn modal-trigger purple" href="'+ episodi[i] +'"><i class="material-icons">file_download</i></a><div id="ep' + (i+1) + '" class="modal"><div class="modal-content no-pad"><video class="responsive-video" src="'+ episodi[i]+ '" controls></video></div><div class="modal-footer"><a href="' + episodi[i] + '" class="waves-effect waves-purple btn-flat"><i class="large material-icons left">file_download</i>Download (Hardsub)</a><a class="modal-action modal-close waves-effect waves-purple btn-flat"><i class="large material-icons left">close</i>Chiudi</a></div></div></td></tr>';
                     
                   }
                   buffer += '</tbody></table>';
@@ -140,22 +140,7 @@
                       complete: function() { alert('Closed triggered'); }
                       });
                     });
-                  /*
-                  if (titoliavailable == 1) {
-                    $("thead").append('<tr><th scope="col">Episodio</th><th scope="col">Titolo</th><th scope="col">Guarda</th></tr>');
-                  } else {
-                    $("thead").append('<tr><th scope="col">Episodio</th><th scope="col">Guarda</th></tr>');
                   }
-
-                  for (let i = 0; i < episodi.length+0; i++) {
-                    if (titoliavailable == 1) {
-                      $("tbody").append('<tr><td scope="row">' + (i+1) + '</td>' + '<td scope="row">' + titoli[i] + '</td>' + '<td scope="row">' + '<a class="waves-effect waves-light btn modal-trigger" href="#modal'+ i +'">Modal</a><div id="modal' + i + '" class="modal"><div class="modal-content no-pad"><video class="responsive-video" src="'+ episodi[i]+ '" controls></video></div><div class="modal-footer"><a href="' + episodi[i] + '" class="waves-effect waves-purple btn-flat">Download</a><a href="#!" class="modal-close waves-effect waves-purple btn-flat">Chiudi</a></div></div>' + '</td></tr>');
-                    } else {
-                      $("tbody").append('<tr><td scope="row">' + (i+1) + '</td>' + '<td scope="row">' + 'Placeholder' + '</td></tr>');
-                    }
-                  }
-                  */
-                }
                 window.onload = compilaepisodi;
               </script>
 
