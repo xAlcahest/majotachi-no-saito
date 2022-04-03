@@ -218,7 +218,7 @@ img#beatoriche.beato {
   bottom: 0;
 }
 
-p.mobileonly {
+.mobileonly {
   display: none;
 }
 
@@ -283,6 +283,14 @@ p.mobileonly {
 
   p {
     font-size: 15px;
+  }
+  
+  .mobileonly {
+    display: block;
+  }
+
+  .spacer {
+    padding-top: 2rem;
   }
 
   .navbar {
