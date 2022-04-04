@@ -54,9 +54,13 @@ a {
 	color: #ab47bc;
 }
 
-.iconasocial {
+img.iconasocial {
   width: 3rem;
   margin-right: 1rem;
+}
+
+img.barlogo {
+  height: 64px;
 }
 
 body {
@@ -263,6 +267,11 @@ img#beatoriche.beato {
   .logo{
     max-height: 200px;
   }
+
+  img.barlogo {
+    height: 56px;
+  }
+
   .parallax-container {
     min-height: 240px;
   }
