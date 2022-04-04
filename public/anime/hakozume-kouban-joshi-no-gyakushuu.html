@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="theme-color" content="#7b1fa2">
+  <title>Majotachi no Sub</title>
+  <meta name="author" content="EricchiYukia">
+  <meta name="description" content="Sito web dei fansub di Majotachi no Sub!">
+  <meta name="keywords" content="Majotachi no Sub,Majotachi,Fansub,SubITA,sub,ita,anime,vn,visual novel,manga">
+  <base href="../">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/stylish.css" type="text/css" rel="stylesheet" media="screen,projection" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+    modali();
+  </script>
+</head>
+<body>
+
+  <div id="index-banner" class="parallax-container hide-on-small-only">
+    <div class="custom-section-logo">
+      <div class="container">
+        <div class="row center">
+          <img class="responsive-img logo" src="images/logo.png">
+        </div>
+        <br /><br />
+      </div>
+    </div>
+    <div class="parallax"><img src="images/ougon.jpg" alt="Sfondo della Terra Dorata"></div>
+  </div>
+  
+
+<div id="bar1"></div>
+</div>
+<ul class="sidenav" id="mobile-demo">
+<div id="bar2"></div>
+</ul>
+</div>
+
+  <!-- Top part
+    End top part-->
+
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="mobileonly spacer"><br /></div>
+          <div class="row s12 m12">
+            <div class="col s12 m12">
+              <div class="row s12 m12">
+                <h4 class="center">Hakozume: Kouban joshi no gyakushuu</h4>
+                <div class="col s12 m6 l4">
+                  <div class="container-image center">
+                    <img src="images/posters/hakozume-kouban-joshi-no-gyakushuu.jpg" class="materialboxed poster">
+                  </div>
+                </div>
+                <div class="col s12 m6 l8">
+                  <h5>Info</h5>
+                  <b>Titolo inglese: </b>Police in a Pod<br />
+                  <b>Titolo giapponese: </b>ハコヅメ~交番女子の逆襲~<br />
+                  <b>Data d'uscita: </b>Inverno 2022<br />
+                  <b>Episodi: </b>13<br />
+                  <b>Genere: </b>Poliziesco, Slice of life
+
+                  <h5>Chi ci ha lavorato</h5>
+                  <b>Traduzione: </b>Glorious Lance<br />
+                  <b>Timing: </b>Casix03<br />
+                  <b>Karaoke: </b>n91<br />
+                  <b>Editor: </b>GasPas97<br />            
+                  <b>Typesetting: </b>Casix03, GasPad97<br />
+                  <b>Encoding: </b>n91<br />
+                  <b>Proofreading: </b>Apposai76<br />
+                  <b>J-check: </b>Sofia Scarlet<br />
+                  <b>Quality control: </b>GasPad97
+                </p>
+              </div>
+            </div>
+            <div class="row s12 m12 l12">
+              <div class="col s12 m12 l12">
+                <h5>Trama dell'anime</h5>
+                <p class="light">Work in progress.</p>
+                <p class="light">Non c'è ancora nulla.</p>
+                <h5>Opinione delle streghe</h5>
+                <p class="light">Manca ancora.</p>
+              </div>
+            </div>
+
+
+              <!-- Qui inizia la tabella episodi -->
+              <div id="episoditable"></div>
+
+              <script type="text/javascript" src="js/bufferaepisodi.js"></script>
+              <script language="javascript">
+                // Qui metti 1 se ci sono anche gli episodi softsub:
+                const softavailable = 1;
+                // Qui metti 1 se gli episodi softsub sono solo su Telegram e 2 se sono disponibili sia qui che su Telegram:
+                const telegramsoft = 1;
+                // Qui metti 1 se gli episodi hanno un titolo:
+                const titoliavailable = 1;
+
+                // Qui vanno i link degli episodi hardsub:
+                const episodi = [
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/"
+                ];
+
+                // Qui va il link di Telegram se i softsub sono lì:
+                const telegramlink = "https://t.me/strawberrypanicfansubita"
+
+                // Qui vanno i link degli episodi softsub se disponibili:
+                const episoft = [
+                  "https://link1",
+                  "https://link2",
+                  "https://link3"
+                ];
+
+                const titoli = [
+                    "Nuovi arrivi & Punching Bag: Parte 1 / Nuovi arrivi & Punching Bag: Parte 2",
+                    "La fortuna del principiante / Una giungla di polizia",
+                    "Arriva l'asso / La storia del cadavere",
+                    "Caro signor cane / La corsa",
+                    "Pattugliamento notturno / Contro il palpeggiatore",
+                    "La festa selvaggia / La fuga dei poliziotti",
+                    "Gara di pedinamento / Tipo persuasivo",
+                    "Eccessiva giustizia / Tutto muscoli",
+                    "Tecnica d'arresto / UFO",
+                    "Il tesserino della polizia / Trauma"
+                ];
+                var codice = bufferaepisodi(softavailable, telegramsoft, titoliavailable, episodi, telegramlink, episoft, titoli);
+                
+                var compilatable = document.getElementById("episoditable");
+                compilatable.innerHTML = codice;
+              
+              </script>
+              <script type="text/javascript" src="js/modali.js"></script>
+
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+
+
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!--  Scripts-->
+
+    <script src="js/init.js"></script>
+    <script language="javascript">
+        function beatoriche() {
+          var laugh = document.getElementById("ahaha");
+          laugh.play();
+          document.getElementById("beatoriche").src = "images/Bea_a11_akuwarai5.png";
+        }
+    </script>
+    <!--
+    <script language="javascript">
+        $(document).ready(function(){
+        $('.modal').modal({dismissable: false,});
+      });
+    </script>
+  -->
+    <script src="js/materialize.min.js"></script>
+    
+      <script>
+        $(function(){ 
+        $("#bar1").load("bar1.html");
+        $("#bar2").load("bar2.html");
+        $("#footer").load("footer.html");  
+        }); 
+      </script>
+      <footer class="page-footer grey darken-4">
+      <div id="footer"></div>
+      </body>
+    </html>
