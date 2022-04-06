@@ -52,36 +52,43 @@
                   <p>Stanza in allestimento. Tornate più tardi, stiamo evocando i mobili.</p>
               </div>
             </div>
-            <div class="mobileonly spacermobile"><br /></div>
-            <div class="mobileonly spacermobile"><br /></div>
-            <div class="mobileonly spacermobile"><br /></div>
-            <div class="mobileonly spacermobile"><br /></div>
-            <div class="mobileonly spacermobile"><br /></div>
             <div class="spacerperbeatrice"></div>
+            <div class="mobileonly spacermobile"></div>
+            <div class="mobileonly spacermobile"></div>
+            <div class="mobileonly spacermobile"></div>
+            <div class="mobileonly spacermobile"></div>
+            <div class="mobileonly spacermobile"></div>
           </div>
         </div>
       </div>
     </div>
 
-  <!--  Scripts-->
-
-  <script src="js/init.js"></script>
-  <script language="javascript">
-      function beatoriche() {
-        var laugh = document.getElementById("ahaha");
-        laugh.play();
-        document.getElementById("beatoriche").src = "images/Bea_a11_akuwarai5.png";
-      }
-  </script>
-   
-  <script>
-    $(function(){ 
-    $("#bar1").load("bar1.html");
-    $("#bar2").load("bar2.html");
-    $("#footer").load("footer.html");  
-    }); 
-  </script>
-  <footer class="page-footer grey darken-4">
-  <div id="footer"></div>
-  </body>
-</html>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/init.js"></script>
+    <script language="javascript">
+        function beatoriche() {
+          var laugh = document.getElementById("ahaha");
+          laugh.play();
+          document.getElementById("beatoriche").src = "images/Bea_a11_akuwarai5.png";
+        }
+    </script>
+    <!--
+    <script language="javascript">
+        $(document).ready(function(){
+        $('.modal').modal({dismissable: false,});
+      });
+    </script>
+  -->
+    <script src="js/materialize.min.js"></script>
+      <script>
+        $(function(){ 
+        $("#bar1").load("bar1.html");
+        $("#bar2").load("bar2.html");
+        $("#footer").load("footer.html");  
+        }); 
+      </script>
+      <footer class="page-footer grey darken-4">
+      <div id="footer"></div>
+      </body>
+    </html>
