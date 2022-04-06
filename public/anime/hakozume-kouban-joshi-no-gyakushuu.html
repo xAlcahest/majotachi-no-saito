@@ -77,7 +77,7 @@
                 </p>
               </div>
             </div>
-            <div class="row s12 m12 l12">
+            <div class="row">
               <div class="col s12 m12 l12">
                 <h5>Trama dell'anime</h5>
                 <p class="light">Work in progress.</p>
@@ -89,68 +89,72 @@
 
 
               <!-- Qui inizia la tabella episodi -->
-              <div id="caricamento"></div>
-              <div id="episoditable"></div>
+              <div class="row">
+                <div class="col s12 m10 l10 offset-m1 offset-l1">
+                  <div id="caricamento"></div>
+                  <div id="episoditable"></div>
 
-              <script type="text/javascript" src="js/bufferaepisodi.js"></script>
-              <script language="javascript">
-                // Qui metti 1 se ci sono anche gli episodi softsub:
-                const softavailable = 0;
-                // Qui metti 1 se ci sono episodi softsub su Telegram:
-                const telegramsoft = 1;
-                // Qui metti 1 se gli episodi hanno un titolo:
-                const titoliavailable = 1;
+                  <script type="text/javascript" src="js/bufferaepisodi.js"></script>
+                  <script language="javascript">
+                    // Qui metti 1 se ci sono anche gli episodi softsub:
+                    const softavailable = 0;
+                    // Qui metti 1 se ci sono episodi softsub su Telegram:
+                    const telegramsoft = 1;
+                    // Qui metti 1 se gli episodi hanno un titolo:
+                    const titoliavailable = 1;
 
-                // Qui vanno i link degli episodi hardsub:
-                const episodi = [
-                  
-                  "https://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/[MnS] Hakozume Kouban Joshi no Gyakushuu - 01 [1080p].mp4",
-                  /*"http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
-                  "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/"
-                  */
-                ];
+                    // Qui vanno i link degli episodi hardsub:
+                    const episodi = [
+                      
+                      "https://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/[MnS] Hakozume Kouban Joshi no Gyakushuu - 01 [1080p].mp4",
+                      /*"http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/",
+                      "http://streaming.majotachinosub.com/anime/hakozume-kouban-joshi-no-gyakushuu/"
+                      */
+                    ];
 
-                // Qui va il link di Telegram se i softsub sono lì:
-                const telegramlink = "https://t.me/majotachinosub"
+                    // Qui va il link di Telegram se i softsub sono lì:
+                    const telegramlink = "https://t.me/majotachinosub"
 
-                // Qui vanno i link degli episodi softsub se disponibili:
-                const episoft = [
-                  "https://link1",
-                  "https://link2",
-                  "https://link3"
-                ];
+                    // Qui vanno i link degli episodi softsub se disponibili:
+                    const episoft = [
+                      "https://link1",
+                      "https://link2",
+                      "https://link3"
+                    ];
 
-                const titoli = [
-                    "Nuovi arrivi & Punching Bag: Parte 1 / Nuovi arrivi & Punching Bag: Parte 2",
-                    "La fortuna del principiante / Una giungla di polizia",
-                    "Arriva l'asso / La storia del cadavere",
-                    "Caro signor cane / La corsa",
-                    "Pattugliamento notturno / Contro il palpeggiatore",
-                    "La festa selvaggia / La fuga dei poliziotti",
-                    "Gara di pedinamento / Tipo persuasivo",
-                    "Eccessiva giustizia / Tutto muscoli",
-                    "Tecnica d'arresto / UFO",
-                    "Il tesserino della polizia / Trauma"
-                ];
-                var codice = bufferaepisodi(softavailable, telegramsoft, titoliavailable, episodi, telegramlink, episoft, titoli);
-                
-                var compilatable = document.getElementById("episoditable");
-                compilatable.innerHTML = codice;
-              
-              </script>
-              <div class="spacerperbeatrice"></div>
+                    const titoli = [
+                        "Nuovi arrivi & Punching Bag: Parte 1 / Nuovi arrivi & Punching Bag: Parte 2",
+                        "La fortuna del principiante / Una giungla di polizia",
+                        "Arriva l'asso / La storia del cadavere",
+                        "Caro signor cane / La corsa",
+                        "Pattugliamento notturno / Contro il palpeggiatore",
+                        "La festa selvaggia / La fuga dei poliziotti",
+                        "Gara di pedinamento / Tipo persuasivo",
+                        "Eccessiva giustizia / Tutto muscoli",
+                        "Tecnica d'arresto / UFO",
+                        "Il tesserino della polizia / Trauma"
+                    ];
+                    var codice = bufferaepisodi(softavailable, telegramsoft, titoliavailable, episodi, telegramlink, episoft, titoli);
+                    
+                    var compilatable = document.getElementById("episoditable");
+                    compilatable.innerHTML = codice;              
+                  </script>
+                    <div class="spacerperbeatrice"></div>
+                </div>
+              <div class="col s0 m1 l1 hide-on-small-only"></div>
             </div>
           </div>
+        </div>
       </div>
     </div>
 

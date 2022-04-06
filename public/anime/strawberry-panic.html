@@ -76,7 +76,7 @@
                   </p>
                 </div>
               </div>
-              <div class="row s12 m12 l12">
+              <div class="row">
                 <div class="col s12 m12 l12">
                   <h5>Trama dell'anime</h5>
                   <p class="light">Ambientato ad Astraea, una sacra collina dove sorge un complesso scolastico di tre accademie molto diverse tra loro, Strawberry Panic racconta <b>la storia di Nagisa Aoi</b>, una studentessa trasferitasi lì a causa di un viaggio di lavoro dei suoi genitori.</p>
@@ -88,95 +88,100 @@
 
 
               <!-- Qui inizia la tabella episodi -->
-              <div id="caricamento"></div>
-              <div id="episoditable"></div>
+              <div class="row">
+                <div class="col s12 m10 l10 offset-m1 offset-l1">
+                  <div id="caricamento"></div>
+                  <div id="episoditable"></div>
 
-              <script type="text/javascript" src="js/bufferaepisodi.js"></script>
-              <script language="javascript">
-                // Qui metti 1 se ci sono anche gli episodi softsub:
-                const softavailable = 1;
-                // Qui metti 1 se gli episodi softsub sono solo su Telegram e 2 se sono disponibili sia qui che su Telegram:
-                const telegramsoft = 1;
-                // Qui metti 1 se gli episodi hanno un titolo:
-                const titoliavailable = 1;
+                  <script type="text/javascript" src="js/bufferaepisodi.js"></script>
+                  <script language="javascript">
+                    // Qui metti 1 se ci sono anche gli episodi softsub:
+                    const softavailable = 1;
+                    // Qui metti 1 se gli episodi softsub sono solo su Telegram e 2 se sono disponibili sia qui che su Telegram:
+                    const telegramsoft = 1;
+                    // Qui metti 1 se gli episodi hanno un titolo:
+                    const titoliavailable = 1;
 
-                // Qui vanno i link degli episodi hardsub:
-                const episodi = [
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 01 - La collina dei fiori di ciliegio [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 02 - Étoile [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 03 - Soffitta [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 04 - Il principe dal cavallo bianco [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 05 - Sorelline [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 06 - Serra [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 07 - La trappola spinosa [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 08 - Ortensie [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 09 - Memorie [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 10 - Lezioni private [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 11 - Pioggia di stelle cadenti [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 12 - Estate [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 13 - Il fragore del mare [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 14 - Più che una migliore amica [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 15 - Eroina [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 16 - Dietro le quinte [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 17 - Segreto [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 18 - Tempesta d'amore [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 19 - Astensione [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 20 - Dichiarazione [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 21 - Come un fiore [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 22 - Duello [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 23 - Labirinto [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 24 - La ruota del destino [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 25 - Valzer [Sub ITA 720p - EricchiYukia].mp4",
-                  "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 26 - Un nuovo inizio [Sub ITA 720p - EricchiYukia].mp4",
-                ];
+                    // Qui vanno i link degli episodi hardsub:
+                    const episodi = [
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 01 - La collina dei fiori di ciliegio [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 02 - Étoile [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 03 - Soffitta [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 04 - Il principe dal cavallo bianco [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 05 - Sorelline [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 06 - Serra [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 07 - La trappola spinosa [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 08 - Ortensie [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 09 - Memorie [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 10 - Lezioni private [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 11 - Pioggia di stelle cadenti [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 12 - Estate [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 13 - Il fragore del mare [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 14 - Più che una migliore amica [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 15 - Eroina [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 16 - Dietro le quinte [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 17 - Segreto [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 18 - Tempesta d'amore [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 19 - Astensione [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 20 - Dichiarazione [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 21 - Come un fiore [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 22 - Duello [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 23 - Labirinto [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 24 - La ruota del destino [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 25 - Valzer [Sub ITA 720p - EricchiYukia].mp4",
+                      "https://streaming.majotachinosub.com/anime/strawberry-panic/Strawberry Panic 26 - Un nuovo inizio [Sub ITA 720p - EricchiYukia].mp4",
+                    ];
 
-                // Qui va il link di Telegram se i softsub sono lì:
-                const telegramlink = "https://t.me/strawberrypanicfansubita"
+                    // Qui va il link di Telegram se i softsub sono lì:
+                    const telegramlink = "https://t.me/strawberrypanicfansubita"
 
-                // Qui vanno i link degli episodi softsub se disponibili:
-                const episoft = [
-                  "https://link1",
-                  "https://link2",
-                  "https://link3"
-                ];
+                    // Qui vanno i link degli episodi softsub se disponibili:
+                    const episoft = [
+                      "https://link1",
+                      "https://link2",
+                      "https://link3"
+                    ];
 
-                const titoli = [
-                    "La collina dei fiori di ciliego",
-                    "Étoile",
-                    "Soffitta",
-                    "Il principe dal cavallo bianco",
-                    "Sorelline",
-                    "Serra",
-                    "La trappola spinosa",
-                    "Ortensie",
-                    "Memorie",
-                    "Lezioni private",
-                    "Pioggia di stelle cadenti",
-                    "Estate",
-                    "Il fragore del mare",
-                    "Più che una migliore amica",
-                    "Eroina",
-                    "Dietro le quinte",
-                    "Segreto",
-                    "Tempesta d'amore",
-                    "Astensione",
-                    "Dichiarazione",
-                    "Come un fiore",
-                    "Duello",
-                    "Labirinto",
-                    "La ruota del destino",
-                    "Valzer",
-                    "Un nuovo inizio"
-                ];
-                var codice = bufferaepisodi(softavailable, telegramsoft, titoliavailable, episodi, telegramlink, episoft, titoli);
-                
-                var compilatable = document.getElementById("episoditable");
-                compilatable.innerHTML = codice;
-              
-              </script>
-            <div class="spacerperbeatrice"></div>
+                    const titoli = [
+                        "La collina dei fiori di ciliego",
+                        "Étoile",
+                        "Soffitta",
+                        "Il principe dal cavallo bianco",
+                        "Sorelline",
+                        "Serra",
+                        "La trappola spinosa",
+                        "Ortensie",
+                        "Memorie",
+                        "Lezioni private",
+                        "Pioggia di stelle cadenti",
+                        "Estate",
+                        "Il fragore del mare",
+                        "Più che una migliore amica",
+                        "Eroina",
+                        "Dietro le quinte",
+                        "Segreto",
+                        "Tempesta d'amore",
+                        "Astensione",
+                        "Dichiarazione",
+                        "Come un fiore",
+                        "Duello",
+                        "Labirinto",
+                        "La ruota del destino",
+                        "Valzer",
+                        "Un nuovo inizio"
+                    ];
+                    var codice = bufferaepisodi(softavailable, telegramsoft, titoliavailable, episodi, telegramlink, episoft, titoli);
+                    
+                    var compilatable = document.getElementById("episoditable");
+                    compilatable.innerHTML = codice;
+                  
+                  </script>
+                <div class="spacerperbeatrice"></div>
+                </div>
+              <div class="col s0 m1 l1 hide-on-small-only"></div>
             </div>
           </div>
+        </div>
       </div>
     </div>
 
