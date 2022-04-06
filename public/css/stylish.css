@@ -139,6 +139,11 @@ h4 {
   font-weight: normal;
 }
 
+hr {
+  width: 80%;
+  border: 1px solid goldenrod;
+}
+
 /* Container testo in-pic */
 div.container-image {
   position: relative;
