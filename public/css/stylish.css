@@ -165,6 +165,10 @@ p {
   width: 90vw;
 }
 
+.spacerperbeatrice {
+  padding-top: 16em;
+}
+
 img.avatar {
   border-radius: 50%;
   max-width: 100%;
@@ -303,8 +307,12 @@ img#beatoriche.beato {
     display: block;
   }
 
-  .spacer {
+  .spacermobile {
     padding-top: 2rem;
+  }
+
+  .spacerperbeatrice {
+    padding-top: 1em;
   }
 
   .navbar {
@@ -321,7 +329,6 @@ img#beatoriche.beato {
     margin-left: auto;
     margin-right: auto;
   }
-
 }
 
 /* Tablet min */
@@ -396,6 +403,8 @@ img#beatoriche.beato {
       text-align: center;
     }
 
-
+    .spacerperbeatrice {
+      padding-top: 5em;
+    }
   }
 }
