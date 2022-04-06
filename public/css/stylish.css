@@ -141,7 +141,12 @@ h4 {
 
 hr {
   width: 80%;
-  border: 1px solid goldenrod;
+  border: 1px solid #D4AA00;
+}
+
+img.separe {
+  padding-top:1em;
+  height: 144px;
 }
 
 /* Container testo in-pic */
@@ -175,7 +180,7 @@ p {
 }
 
 .spacerperbeatrice {
-  padding-top: 16em;
+  padding-top: 12em;
 }
 
 img.avatar {
@@ -308,6 +313,11 @@ img#beatoriche.beato {
     width: 100%;
   }
 
+  img.separe {
+    padding-top:2em;
+    height: 96px;
+  }
+
   p {
     font-size: 15px;
   }
@@ -391,6 +401,11 @@ img#beatoriche.beato {
 
     .container {
       width: 92%;
+    }
+
+    img.separe {
+      padding-top:2em;
+      height: 128px;
     }
   
     #bottompic {
