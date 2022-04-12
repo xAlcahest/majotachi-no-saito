@@ -173,10 +173,10 @@ p {
 
 .modal {
   min-height: min-content;
-  max-height: 110vw;
+  max-height: 92vw;
   min-width: min-content;
-  max-width: 110vh;
-  width: 90vw;
+  max-width: 92vh;
+  width: 92vw;
 }
 
 .spacerperbeatrice {
