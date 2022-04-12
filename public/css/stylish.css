@@ -173,9 +173,9 @@ p {
 
 .modal {
   min-height: min-content;
-  max-height: 90vw;
+  max-height: 110vw;
   min-width: min-content;
-  max-width: 90vh;
+  max-width: 110vh;
   width: 90vw;
 }
 
