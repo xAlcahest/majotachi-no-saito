@@ -245,6 +245,11 @@ img#beatoriche.beato {
   bottom: 0;
 }
 
+.bganime {
+  background-color: #000000;
+  text-align: center;
+}
+
 .mobileonly {
   display: none;
 }
