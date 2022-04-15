@@ -89,7 +89,6 @@
               <!-- Qui inizia la tabella episodi -->
               <div class="row">
                 <div class="col s12 m10 l10 offset-m1 offset-l1">
-                  <div id="caricamento"></div>
                   <div id="episoditable"></div>
 
                   <script type="text/javascript" src="js/bufferaepisodi.js"></script>
@@ -131,6 +130,7 @@
                     
                     var compilatable = document.getElementById("episoditable");
                     compilatable.innerHTML = codice;
+                    caricaplayer(episodi);
                   </script>
                   <div class="center">
                     <img class="separe center" src="images/separe.png" />
