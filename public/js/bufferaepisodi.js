@@ -41,6 +41,6 @@ function caricaplayer(episodi){
 
     for (let i = 0; i < episodi.length; i++){
         var playerbox = document.getElementById('playerbox'+ (i+1) +'');
-        playerbox.innerHTML = '<video class="responsive-video anime" src="'+ episodi[i]+ '" controls preload="none"></video>';
+        playerbox.innerHTML = '<video class="responsive-video anime" src="'+ episodi[i]+ '" controls preload="metadata"></video>';
     }
 }
