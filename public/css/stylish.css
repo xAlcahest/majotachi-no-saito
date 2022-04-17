@@ -40,6 +40,18 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "NotoSerifDisplay";
+  src: url("../fonts/NotoSerifDisplay-Italic.woff") format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "NotoSerifDisplay";
+  src: url("../fonts/NotoSerifDisplay-Regular.woff") format('woff');
+  font-style: normal;
+}
+
 
 html, body {
     font-family: 'NotoSans';
@@ -247,6 +259,15 @@ img#beatoriche.beato {
 
 .bganime {
   text-align: center;
+}
+
+.question {
+  font-size: 1.5em;
+  font-family: 'NotoSerifDisplay', cursive;
+}
+
+.answer {
+
 }
 
 .mobileonly {
