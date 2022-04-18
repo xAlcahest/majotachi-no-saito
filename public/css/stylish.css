@@ -41,14 +41,14 @@
 }
 
 @font-face {
-  font-family: "NotoSerifDisplay";
-  src: url("../fonts/NotoSerifDisplay-Italic.woff") format('woff');
+  font-family: "Marcha";
+  src: url("../fonts/Marcha.woff") format('woff');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "NotoSerifDisplay";
-  src: url("../fonts/NotoSerifDisplay-Regular.woff") format('woff');
+  font-family: "Marcha";
+  src: url("../fonts/Marcha.woff") format('woff');
   font-style: normal;
 }
 
@@ -263,11 +263,13 @@ img#beatoriche.beato {
 
 .question {
   font-size: 1.5em;
-  font-family: 'NotoSerifDisplay', cursive;
+  font-family: 'NotoSans';
+  margin-bottom:0;
 }
 
 .answer {
-
+  padding-bottom: 1em;
+  margin-top: 0;
 }
 
 .mobileonly {
