@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="theme-color" content="#7b1fa2">
+  <title>Majotachi no Sub</title>
+  <meta name="author" content="EricchiYukia">
+  <meta name="description" content="Sito web dei fansub di Majotachi no Sub!">
+  <meta name="keywords" content="Majotachi no Sub,Majotachi,Fansub,SubITA,sub,ita,anime,vn,visual novel,manga">
+  <base href="../">
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/stylish.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+</head>
+<body>
+
+  <div id="index-banner" class="parallax-container hide-on-small-only">
+    <div class="custom-section-logo">
+      <div class="container">
+        <div class="row center">
+          <img class="responsive-img logo" src="images/logo.png">
+        </div>
+        <br /><br />
+      </div>
+    </div>
+    <div class="parallax"><img src="images/ougon.jpg" alt="Sfondo della Terra Dorata"></div>
+  </div>
+  
+
+<div id="bar1"></div>
+</div>
+<ul class="sidenav" id="mobile-demo">
+<div id="bar2"></div>
+</ul>
+</div>
+
+  <!-- Top part
+    End top part-->
+
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="mobileonly spacermobile"><br /></div>
+          <div class="row s12 m12">
+            <div class="col s12 m12">
+              <div class="row s12 m12">
+                <h4 class="center">Summer Time Rendering</h4>
+                <div class="col s12 m6 l4">
+                  <div class="container-image center">
+                    <img src="images/posters/summer-time-rendering.jpg" class="materialboxed poster">
+                  </div>
+                </div>
+                <div class="col s12 m6 l8">
+                  <h5>Info</h5>
+                  <b>Titolo giapponese: </b>サマータイムレンダ<br />
+                  <b>Data d'uscita: </b>Primavera 2022<br />
+                  <b>Episodi: </b>25<br />
+                  <b>Genere: </b>Mistero, Soprannaturale
+
+                  <h5>Chi ci ha lavorato</h5>
+                  <h6>Per questo progetto abbiamo collaborato con <a href="https://bowlingballfansubs.it/" target="_blank">Bowling Ball Fansubs</a></h6>
+                  <b>Traduzione: </b>Glorious Lance<br />
+                  <b>Timing: </b>Vaz<br />
+                  <b>Karaoke: </b>n91, LightArrowsEXE<br />
+                  <b>Song translation: </b>Glorious Lance<br />
+                  <b>Song TLC: </b>Sofia Scarlet<br />
+                  <b>Editing: </b>EricchiYukia<br />
+                  <b>Typesetting: </b>Casix03, Maebara Keiichi, Sante<br />
+                  <b>Encoding: </b>[BetterButter]<br />
+                  <b>Proofreading: </b>Vaz<br />
+                  <b>Translation check: </b>Sofia Scarlet<br />
+                  <b>Quality control: </b>Tadao
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <h5>Trama dell'anime</h5>
+                <p class="light">Dopo la morte dei suoi genitori, <b>Shinpei</b> è stato accolto dalla <b>famiglia Kofune</b> e cresciuto da loro <i>come un figlio</i>. Finita la scuola media, il ragazzo <b>si trasferisce a Tokyo</b>, ma non molto tempo dopo, un <i>triste evento</i> lo riporta sull'isola dov'è nato: <b>la morte di Ushio</b>, sua sorella adottiva e migliore amica.</p>
+                <p class="light">Subito dopo il funerale, Shinpei scopre che la morte della ragazza <i>potrebbe non essere stata</i> un incidente, ma <b>un omicidio</b>. Un'<i>inquietante leggenda</i> riguardante l'isola viene all'improvviso a galla...</p>
+                <h5>Opinione delle Streghe</h5>
+                <p class="light">La trama di questo anime ci porta alla mente dei <b>cari ricordi</b>. A tratti, <i>sembra infatti molto simile</i> alle vicende avvenute in una <b>cittadina rurale</b> di nostra conoscenza.</p>
+                <p class="light">Il <b>setting costiero</b>, le animazioni di qualità e alcuni <i>piccoli twist</i> ce lo hanno fatto apprezzare.</p>
+              </div>
+            </div>
+
+
+              <!-- Qui inizia la tabella episodi -->
+              <div class="row">
+                <div class="col s12 m10 l10 offset-m1 offset-l1">
+                  <div id="episoditable"></div>
+
+                  <script type="text/javascript" src="js/bufferaepisodi.js"></script>
+                  <script language="javascript">
+                    // Qui metti 1 se ci sono anche gli episodi softsub:
+                    const softavailable = 0;
+                    // Qui metti 1 se ci sono episodi softsub su Telegram:
+                    const telegramsoft = 1;
+                    // Qui metti 1 se gli episodi hanno un titolo:
+                    const titoliavailable = 1;
+
+                    // Qui vanno i link degli episodi hardsub:
+                    const episodi = [
+                      
+                      /*"https://streaming.majotachinosub.com/anime/summer-time-rendering/",
+                      "https://streaming.majotachinosub.com/anime/summer-time-rendering/"
+                      */
+                    ];
+
+                    // Qui va il link di Telegram se i softsub sono lì:
+                    const telegramlink = "https://t.me/majotachinosub"
+
+                    // Qui vanno i link degli episodi softsub se disponibili:
+                    const episoft = [
+                      "https://link1",
+                      "https://link2",
+                      "https://link3"
+                    ];
+
+                    const titoli = [
+                        "--",
+                        "Ombre"
+                    ];
+                    var codice = bufferaepisodi(softavailable, telegramsoft, titoliavailable, episodi, telegramlink, episoft, titoli);
+                    
+                    var compilatable = document.getElementById("episoditable");
+                    compilatable.innerHTML = codice;
+                    caricaplayer(episodi);
+                  </script>
+                  <div class="center">
+                    <img class="separe center" src="images/separe.png" />
+                  </div>
+                  <div class="spacerperbeatrice"></div>
+                </div>
+              <div class="col s0 m1 l1 hide-on-small-only"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--  Scripts-->
+  <script src="js/init.js"></script>
+  <script src="js/decorastreghe.js" language="javascript"></script>
+  <footer class="page-footer grey darken-4">
+  <div id="footer"></div>
+  </body>
+</html>
