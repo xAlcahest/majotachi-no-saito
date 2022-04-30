@@ -167,6 +167,10 @@ div.container-image {
   text-align: center;
 }
 
+.va-top {
+  vertical-align: top !important;
+}
+
 div.bottom-image {
   position:absolute;
   bottom: 0px;
