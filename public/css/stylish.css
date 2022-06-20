@@ -388,9 +388,14 @@ img#beatoriche.beato {
     padding-top: 43px;
     padding-bottom: 43px;
   }
+
+  .poster {
+    float: right;
+  }
+
 	img.logo {
-	   max-width: 35em;
-     margin: 0 auto;
+    max-width: 35em;
+    margin: 0 auto;
 	}
   .brand-logo{
     padding-left: 18px !important;

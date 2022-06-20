@@ -4,8 +4,8 @@ function beatoriche() {
     document.getElementById("beatoriche").src = "images/Bea_a11_akuwarai5.png";
 }
 
-$(function(){ 
+$(function () {
     $("#bar1").load("bar1.html");
     $("#bar2").load("bar2.html");
-    $("#footer").load("footer.html");  
-}); 
+    $("#footer").load("footer.html");
+});
