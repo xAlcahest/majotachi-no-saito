@@ -234,6 +234,11 @@ li .waves-effect {
   display: block;
 }
 
+li.stars:before {
+  content: "★";
+  padding-right: 1em;
+}
+
 #wrapper {
   position: relative;
 }
