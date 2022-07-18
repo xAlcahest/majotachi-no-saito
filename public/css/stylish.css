@@ -260,6 +260,10 @@ li.stars:before {
   max-width: 100%;
 }
 
+img.pic70 {
+  max-width: 70%;
+}
+
 img#beatoriche.beato {
   max-height: 30em;
   max-width: 30em;
