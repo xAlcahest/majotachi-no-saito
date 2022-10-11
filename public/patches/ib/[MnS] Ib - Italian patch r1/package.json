@@ -1,0 +1,12 @@
+{
+    "name": "Ib ☆ MnS Italian patch r1",
+    "main": "www/index.html",
+    "js-flags": "--expose-gc",
+    "window": {
+        "title": "",
+        "toolbar": false,
+        "width": 1280,
+        "height": 720,
+        "icon": "www/icon/icon.png"
+    }
+}

@@ -298,6 +298,31 @@ img#beatoriche.beato {
   margin-right: auto;
 }
 
+.evidenza-height {
+  max-height: 16em;
+}
+
+.evidenza-overflow {
+  overflow-x: auto;
+}
+
+.sfondo-evidenza {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.evidenza-box {
+  max-width: 800px;
+}
+
+/* Schermi desktop, HD */
+@media only screen and (min-width : 992px) {
+
+
+}
 /* Mobile */
 @media only screen and (max-width: 600px) {
   #index-banner .section {
@@ -388,6 +413,7 @@ img#beatoriche.beato {
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 
 /* Tablet min */
